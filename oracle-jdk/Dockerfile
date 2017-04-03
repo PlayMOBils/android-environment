@@ -5,7 +5,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 # Set the locale, avoid warnings in regular expressions
 RUN \
   apt-get update && \
-  apt-get install -y --no-install-recommends locales && \
+  apt-get install -qqy --no-install-recommends locales && \
   rm -rf /var/lib/apt/lists/* \
     /var/cache/apt/archives/* \
     /var/cache/debconf/*-old &&\
@@ -24,7 +24,7 @@ RUN \
   apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys EEA14886 &&\
   apt-get update &&\
   echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | debconf-set-selections &&\
-  apt-get -y --no-install-recommends install oracle-java8-installer unzip &&\
+  apt-get -qqy --no-install-recommends install oracle-java8-installer unzip &&\
   rm -rf /var/lib/apt/lists/* \
     /var/cache/apt/archives/* \
     /var/cache/debconf/*-old \

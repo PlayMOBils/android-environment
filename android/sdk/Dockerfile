@@ -7,14 +7,15 @@ ENV SDK_HOME /usr/local
 
 #Prerequistic packages libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
 RUN \
+    dpkg --add-architecture i386 && \
     apt-get -qq update && \
     apt-get install -qqy --no-install-recommends \
       curl \
-      libc6-i386 \
-      lib32stdc++6 \
-      lib32gcc1 \
-      lib32ncurses5 \
+      libc6:i386 \
+      libncurses5:i386 \
+      libstdc++6:i386 \
       lib32z1 \
+      libbz2-1.0:i386 \
       && \
     rm -rf \
       /var/lib/apt/lists/* \
