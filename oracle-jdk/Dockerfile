@@ -1,5 +1,5 @@
 # Pull base image.
-FROM debian:wheezy
+FROM debian:jessie
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Set the locale, avoid warnings in regular expressions
