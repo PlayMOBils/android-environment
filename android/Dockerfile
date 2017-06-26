@@ -12,7 +12,8 @@ RUN apt-get -qq update && \
     apt-get -qqy install --no-install-recommends \
        gawk \
        bc \
-       make &&\
+       make \
+       git &&\
     rm -rf \
       /var/lib/apt/lists/* \
       /tmp/* \
