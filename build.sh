@@ -16,6 +16,6 @@ function dockerBuild() {
 }
 
 dockerBuild oracle-jdk 8 oracle-jdk
-dockerBuild android-sdk 23 android/sdk
-dockerBuild android-ndk 14b android/ndk
-dockerBuild android 23_14b android
+dockerBuild android-sdk 26 android/sdk
+dockerBuild android-ndk 26_14b android/ndk
+dockerBuild android 26_14b android

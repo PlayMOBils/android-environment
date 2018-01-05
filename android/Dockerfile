@@ -1,5 +1,5 @@
 
-FROM playmobils/android-ndk:23_14b
+FROM playmobils/android-ndk:26_14b
 ARG DEBIAN_FRONTEND=noninteractive
 # How to use
 
@@ -9,16 +9,14 @@ ARG DEBIAN_FRONTEND=noninteractive
 
 # Install dependencies
 RUN apt-get -qq update && \
-    apt-get -qqy install --no-install-recommends \
-       gawk \
-       bc \
-       make \
-       git &&\
-    rm -rf \
-      /var/lib/apt/lists/* \
-      /tmp/* \
-      /var/tmp/* \
-      /var/cache/apt/archives/* \
-      /var/cache/debconf/*-old
-
-RUN echo "count=0" > ~/.android/repositories.cfg
+  apt-get -qqy install --no-install-recommends \
+  gawk \
+  bc \
+  make \
+  git &&\
+  rm -rf \
+  /var/lib/apt/lists/* \
+  /tmp/* \
+  /var/tmp/* \
+  /var/cache/apt/archives/* \
+  /var/cache/debconf/*-old
