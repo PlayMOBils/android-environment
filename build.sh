@@ -18,4 +18,4 @@ function dockerBuild() {
 dockerBuild oracle-jdk 8 oracle-jdk
 dockerBuild android-sdk 23 android/sdk
 dockerBuild android-ndk 14b android/ndk
-dockerBuild android latest android
+dockerBuild android 23_14b android
