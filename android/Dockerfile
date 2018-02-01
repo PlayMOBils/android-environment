@@ -13,6 +13,7 @@ RUN apt-get -qq update && \
   gawk \
   bc \
   make \
+  zip \
   git &&\
   rm -rf \
   /var/lib/apt/lists/* \
