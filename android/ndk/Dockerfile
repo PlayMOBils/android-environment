@@ -1,5 +1,5 @@
 
-FROM playmobils/android-sdk:26
+FROM playmobils/android-sdk:27
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Everything will be installed in the directory but jdk.
