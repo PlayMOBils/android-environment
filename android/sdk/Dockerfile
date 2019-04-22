@@ -1,5 +1,5 @@
 
-FROM playmobils/oracle-jdk:8
+FROM openjdk:8
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Everything will be installed in the directory but jdk.
