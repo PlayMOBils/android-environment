@@ -10,7 +10,6 @@ No other tools are included.
 ## Dependencies
 * [OpenJDK 8](https://hub.docker.com/_/openjdk)
 * [Android SDK](https://hub.docker.com/r/playmobils/android-sdk)
-* [Oracle JDK 8](https://hub.docker.com/r/playmobils/oracle-jdk)
 
 ## Include
 * Android NDK r14b
