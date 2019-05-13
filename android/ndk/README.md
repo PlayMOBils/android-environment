@@ -8,7 +8,7 @@ This is a Dockerfile to make an image for Android Native projects.
 No other tools are included.
 
 ## Dependencies
-* [Debian jessie](https://hub.docker.com/r/library/debian/tags/jessie/)
+* [OpenJDK 8](https://hub.docker.com/_/openjdk)
 * [Android SDK](https://hub.docker.com/r/playmobils/android-sdk)
 * [Oracle JDK 8](https://hub.docker.com/r/playmobils/oracle-jdk)
 
@@ -18,12 +18,12 @@ No other tools are included.
 
 ## Download
 ```bash
-docker pull playmobils/android-ndk:14b
+docker pull playmobils/android-ndk:26_14b
 ```
 
 ## Usage
 ```bash
-sudo docker run -it playmobils/android-ndk:14b sh
+sudo docker run -it playmobils/android-ndk:26_14b sh
 ```
 
 ## License

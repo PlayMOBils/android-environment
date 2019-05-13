@@ -5,8 +5,7 @@
 This is a Dockerfile contains remaining tools for our build environment.
 
 ## Dependencies
-* [Debian jessie](https://hub.docker.com/r/library/debian/tags/jessie/)
-* [Oracle JDK 8](https://hub.docker.com/r/playmobils/oracle-jdk)
+* [OpenJDK 8](https://hub.docker.com/_/openjdk)
 * [Android SDK](https://hub.docker.com/r/playmobils/android-sdk)
 * [Android NDK](https://hub.docker.com/r/playmobils/android-ndk)
 

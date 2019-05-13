@@ -8,22 +8,21 @@ This is a Dockerfile to make minimum images for Android projects.
 No `git` or other tools are included.
 
 ## Dependencies
-* [Debian jessie](https://hub.docker.com/r/library/debian/tags/jessie/)
-* [Oracle JDK 8](https://hub.docker.com/r/playmobils/oracle-jdk)
+* [OpenJDK 8](https://hub.docker.com/_/openjdk)
 
 ## Include
-* Android SDK (android-23)
+* Android SDK (android-26)
 * Android Support Libraries
 * Google Play Services
 
 ## Download
 ```bash
-docker pull playmobils/android-sdk:23
+docker pull playmobils/android-sdk:26
 ```
 
 ## Usage
 ```bash
-sudo docker run -it playmobils/android-sdk:23 sh
+sudo docker run -it playmobils/android-sdk:26 sh
 ```
 
 ## License
