@@ -18,12 +18,12 @@ No other tools are included.
 
 ## Download
 ```bash
-docker pull playmobils/android-ndk:26_14b
+docker pull playmobils/android-ndk:28_14b
 ```
 
 ## Usage
 ```bash
-sudo docker run -it playmobils/android-ndk:26_14b sh
+sudo docker run -it playmobils/android-ndk:28_14b sh
 ```
 
 ## License

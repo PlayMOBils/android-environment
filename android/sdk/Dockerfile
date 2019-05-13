@@ -27,8 +27,8 @@ RUN \
 ENV ANDROID_HOME "${SDK_HOME}/sdk"
 ENV PATH "$PATH:${ANDROID_HOME}/tools"
 
-ENV VERSION_BUILD_TOOLS "27.0.3"
-ENV VERSION_TARGET_SDK "27"
+ENV VERSION_BUILD_TOOLS "28.0.3"
+ENV VERSION_TARGET_SDK "28"
 
 # https://developer.android.com/studio/index.html#command-tools
 ENV ANDROID_TOOLS_URL http://dl.google.com/android/repository/sdk-tools-linux-3859397.zip

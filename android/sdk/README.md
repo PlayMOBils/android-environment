@@ -11,18 +11,18 @@ No `git` or other tools are included.
 * [OpenJDK 8](https://hub.docker.com/_/openjdk)
 
 ## Include
-* Android SDK (android-26)
+* Android SDK (android-28)
 * Android Support Libraries
 * Google Play Services
 
 ## Download
 ```bash
-docker pull playmobils/android-sdk:26
+docker pull playmobils/android-sdk:28
 ```
 
 ## Usage
 ```bash
-sudo docker run -it playmobils/android-sdk:26 sh
+sudo docker run -it playmobils/android-sdk:28 sh
 ```
 
 ## License

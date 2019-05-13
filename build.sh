@@ -15,6 +15,6 @@ function dockerBuild() {
     echo ""
 }
 
-dockerBuild android-sdk 26 android/sdk
-dockerBuild android-ndk 26_14b android/ndk
-dockerBuild android 26_14b android
+dockerBuild android-sdk 28 android/sdk
+dockerBuild android-ndk 28_14b android/ndk
+dockerBuild android 28_14b android
