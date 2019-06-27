@@ -16,5 +16,5 @@ function dockerBuild() {
 }
 
 dockerBuild android-sdk 28 android/sdk
-dockerBuild android-ndk 28_14b android/ndk
-dockerBuild android 28_14b android
+dockerBuild android-ndk 28_20 android/ndk
+dockerBuild android 28_20 android
