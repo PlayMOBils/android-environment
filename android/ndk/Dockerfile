@@ -18,7 +18,7 @@ ENV ANDROID_NDK_HOME ${ANDROID_HOME}/ndk-bundle
 ENV PATH ${ANDROID_NDK_HOME}:$PATH
 
 ENV NDK_PACKAGES "ndk-bundle" \
-                 "cmake;3.10.2.4988404"
+                 "cmake;3.6.4111459"
                  
 RUN (while [ 1 ]; do sleep 5; echo y; done) | \
   ${ANDROID_HOME}/tools/bin/sdkmanager ${NDK_PACKAGES}
