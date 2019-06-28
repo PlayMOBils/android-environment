@@ -12,17 +12,17 @@ No other tools are included.
 * [Android SDK](https://hub.docker.com/r/playmobils/android-sdk)
 
 ## Include
-* Android NDK r14b
+* Android NDK Bundle
 * file (Needed by ndk-build command)
 
 ## Download
 ```bash
-docker pull playmobils/android-ndk:28_14b
+docker pull playmobils/android-ndk:28_20
 ```
 
 ## Usage
 ```bash
-sudo docker run -it playmobils/android-ndk:28_14b sh
+sudo docker run -it playmobils/android-ndk:28_20 sh
 ```
 
 ## License
