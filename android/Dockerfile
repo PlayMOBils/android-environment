@@ -1,5 +1,5 @@
 
-FROM playmobils/android-ndk:28_14b
+FROM playmobils/android-ndk:28_20
 ARG DEBIAN_FRONTEND=noninteractive
 # How to use
 
