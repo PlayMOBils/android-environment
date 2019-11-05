@@ -14,6 +14,7 @@ RUN apt-get -qq update && \
   bc \
   make \
   zip \
+  maven \
   git &&\
   rm -rf \
   /var/lib/apt/lists/* \
