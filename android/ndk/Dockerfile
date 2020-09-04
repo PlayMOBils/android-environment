@@ -21,7 +21,9 @@ ENV PATH ${ANDROID_NDK_HOME}:$PATH
 
 ENV NDK_PACKAGES "ndk;${NDK_VERSION}" \
                  "cmake;3.10.2.4988404"
-                 
+
+RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
+
 RUN (while [ 1 ]; do sleep 5; echo y; done) | \
   ${ANDROID_HOME}/tools/bin/sdkmanager ${NDK_PACKAGES}
   
