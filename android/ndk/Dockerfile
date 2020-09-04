@@ -13,12 +13,14 @@ RUN dpkg --add-architecture i386 && \
   /var/cache/apt/archives/* \
   /var/cache/debconf/*-old
 
-ENV ANDROID_NDK_HOME ${ANDROID_HOME}/ndk-bundle
+ENV NDK_VERSION "21.3.6528147"
+
+ENV ANDROID_NDK_HOME ${ANDROID_HOME}/ndk/${NDK_VERSION}
 
 ENV PATH ${ANDROID_NDK_HOME}:$PATH
 
-ENV NDK_PACKAGES "ndk-bundle" \
-                 "cmake;3.6.4111459"
+ENV NDK_PACKAGES "ndk;${NDK_VERSION}" \
+                 "cmake;3.10.2.4988404"
                  
 RUN (while [ 1 ]; do sleep 5; echo y; done) | \
   ${ANDROID_HOME}/tools/bin/sdkmanager ${NDK_PACKAGES}
