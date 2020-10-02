@@ -1,5 +1,5 @@
 
-FROM playmobils/android-sdk:28
+FROM playmobils/android-sdk:29
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Install dependencies
