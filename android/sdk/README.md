@@ -8,21 +8,21 @@ This is a Dockerfile to make minimum images for Android projects.
 No `git` or other tools are included.
 
 ## Dependencies
-* [OpenJDK 8](https://hub.docker.com/_/openjdk)
+* [OpenJDK 11](https://hub.docker.com/_/openjdk)
 
 ## Include
-* Android SDK (android-29)
+* Android SDK (android-30)
 * Android Support Libraries
 * Google Play Services
 
 ## Download
 ```bash
-docker pull playmobils/android-sdk:29
+docker pull playmobils/android-sdk:30
 ```
 
 ## Usage
 ```bash
-sudo docker run -it playmobils/android-sdk:29 sh
+sudo docker run -it playmobils/android-sdk:30 sh
 ```
 
 ## License

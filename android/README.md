@@ -5,7 +5,7 @@
 This is a Dockerfile contains remaining tools for our build environment.
 
 ## Dependencies
-* [OpenJDK 8](https://hub.docker.com/_/openjdk)
+* [OpenJDK 11](https://hub.docker.com/_/openjdk)
 * [Android SDK](https://hub.docker.com/r/playmobils/android-sdk)
 * [Android NDK](https://hub.docker.com/r/playmobils/android-ndk)
 

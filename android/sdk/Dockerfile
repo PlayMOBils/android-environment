@@ -1,5 +1,5 @@
 
-FROM openjdk:8
+FROM openjdk:11
 ARG DEBIAN_FRONTEND=noninteractive
 
 # Everything will be installed in the directory but jdk.
@@ -27,11 +27,11 @@ RUN \
 ENV ANDROID_HOME "${SDK_HOME}/sdk"
 ENV PATH "$PATH:${ANDROID_HOME}/tools"
 
-ENV VERSION_BUILD_TOOLS "29.0.3"
-ENV VERSION_TARGET_SDK "29"
+ENV VERSION_BUILD_TOOLS "30.0.2"
+ENV VERSION_TARGET_SDK "30"
 
 # https://developer.android.com/studio/index.html#command-tools
-ENV ANDROID_TOOLS_URL http://dl.google.com/android/repository/sdk-tools-linux-3859397.zip
+ENV ANDROID_TOOLS_URL http://dl.google.com/android/repository/commandlinetools-linux-6609375_latest.zip
 
 RUN curl -L "${ANDROID_TOOLS_URL}" -o tools.zip && \
   unzip /tools.zip -d ${ANDROID_HOME} && \
@@ -53,10 +53,10 @@ ENV SDK_PACKAGES "build-tools;${VERSION_BUILD_TOOLS}" \
 RUN mkdir ~/.android
 RUN echo "count=0" > ~/.android/repositories.cfg
 
-RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --licenses
+RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
 
 RUN (while [ 1 ]; do sleep 5; echo y; done) | \
-  ${ANDROID_HOME}/tools/bin/sdkmanager ${SDK_PACKAGES} \
+  ${ANDROID_HOME}/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} ${SDK_PACKAGES} \
   && \
   rm -vrf `find -type d -name docs` && \
   rm -vrf `find -type d -name templates` && \
