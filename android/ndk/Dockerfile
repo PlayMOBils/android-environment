@@ -25,8 +25,8 @@ ENV NDK_PACKAGES "ndk;${NDK_VERSION}" \
                  "cmake;3.10.2.4988404" \
                  "cmake;3.6.4111459"
 
-RUN yes | ${ANDROID_HOME}/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
+RUN yes | ${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} --licenses
 
 RUN (while [ 1 ]; do sleep 5; echo y; done) | \
-  ${ANDROID_HOME}/tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} ${NDK_PACKAGES}
+  ${ANDROID_HOME}/cmdline-tools/bin/sdkmanager --sdk_root=${ANDROID_HOME} ${NDK_PACKAGES}
   
