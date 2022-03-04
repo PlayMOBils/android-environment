@@ -8,7 +8,7 @@ This is a Dockerfile to make an image for Android Native projects.
 No other tools are included.
 
 ## Dependencies
-* [OpenJDK 8](https://hub.docker.com/_/openjdk)
+* [OpenJDK 11](https://hub.docker.com/_/openjdk)
 * [Android SDK](https://hub.docker.com/r/playmobils/android-sdk)
 
 ## Include
