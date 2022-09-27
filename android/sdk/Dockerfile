@@ -27,8 +27,8 @@ RUN \
 ENV ANDROID_HOME "${SDK_HOME}/sdk"
 ENV PATH "$PATH:${ANDROID_HOME}/tools"
 
-ENV VERSION_BUILD_TOOLS "30.0.2"
-ENV VERSION_TARGET_SDK "30"
+ENV VERSION_BUILD_TOOLS "32.0.0"
+ENV VERSION_TARGET_SDK "32"
 
 # https://developer.android.com/studio/index.html#command-tools
 ENV ANDROID_TOOLS_URL https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip
