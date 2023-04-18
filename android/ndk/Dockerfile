@@ -22,6 +22,7 @@ ENV ANDROID_NDK_HOME ${ANDROID_HOME}/ndk/${NDK_VERSION}
 ENV PATH ${ANDROID_NDK_HOME}:$PATH
 
 ENV NDK_PACKAGES "ndk;${NDK_VERSION}" \
+                 "cmake;3.22.1" \
                  "cmake;3.18.1" \
                  "cmake;3.10.2.4988404" \
                  "cmake;3.6.4111459"
