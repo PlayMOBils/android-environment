@@ -31,7 +31,7 @@ ENV VERSION_BUILD_TOOLS "32.0.0"
 ENV VERSION_TARGET_SDK "32"
 
 # https://developer.android.com/studio/index.html#command-tools
-ENV ANDROID_TOOLS_URL https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip
+ENV ANDROID_TOOLS_URL https://dl.google.com/android/repository/commandlinetools-linux-9477386_latest.zip
 
 RUN curl -L "${ANDROID_TOOLS_URL}" -o tools.zip && \
   unzip /tools.zip -d ${ANDROID_HOME} && \
@@ -44,11 +44,8 @@ RUN curl -L "${ANDROID_TOOLS_URL}" -o tools.zip && \
   ${ANDROID_HOME}/tools/apps
 
 ENV SDK_PACKAGES "build-tools;${VERSION_BUILD_TOOLS}" \
-  "extras;android;m2repository" \
-  "extras;google;m2repository" \
   "platform-tools" \
-  "platforms;android-${VERSION_TARGET_SDK}" \
-  "tools"
+  "platforms;android-${VERSION_TARGET_SDK}"
 
 RUN mkdir ~/.android
 RUN echo "count=0" > ~/.android/repositories.cfg
